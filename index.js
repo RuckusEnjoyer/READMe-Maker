@@ -1,9 +1,9 @@
-// TODO: Include packages needed for this application
+// Packages for the application
 const FS = require('fs');
 const INQUIRER = require('inquirer');
 const {renderLicenseBadge} = require('./utils/generateMarkdown');
 
-// TODO: Create a function to write README file
+//function to write the README file
 function writeToFile({fileName, license, desc, install, usage, contribute, test, ghub, email}) {
     return `
 # ${fileName}
@@ -52,7 +52,7 @@ Email: ${email}
     `
 }
 
-// TODO: Create a function to initialize app
+//function to initialize app
 function init() {
     INQUIRER.prompt([
         {
@@ -88,7 +88,7 @@ function init() {
         {
             type: 'list',
             message: 'What license should this application use?',
-            choices: ['MIT', 'GPL', 'Apache', 'BSD', 'MPL'],
+            choices: ['MIT', 'GPL', 'Apache', 'BSD', 'MPL', 'No License'],
             name: 'license',
         },
         {
