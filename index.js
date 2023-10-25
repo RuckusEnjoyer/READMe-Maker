@@ -3,9 +3,6 @@ const FS = require('fs');
 const INQUIRER = require('inquirer');
 const {renderLicenseBadge} = require('./utils/generateMarkdown');
 
-// TODO: Create an array of questions for user input
-const questions = [];
-
 // TODO: Create a function to write README file
 function writeToFile({fileName, license, desc, install, usage, contribute, test, ghub, email}) {
     return `
@@ -56,7 +53,63 @@ Email: ${email}
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    INQUIRER.prompt([
+        {
+            type: 'input',
+            message: 'What is your file name?',
+            name: 'fileName'
+        },
+        {
+            type: 'input',
+            message: 'What will your description be?',
+            name: 'desc'
+        },
+        {
+            type: 'input',
+            message: 'how do you install this application?',
+            name: 'install',
+        },
+        {
+            type: 'input',
+            message: 'How will the user use this application?',
+            name: 'usage'
+        },
+        {
+            type: 'input',
+            message: 'How can a user contribute to this application?',
+            name: 'contribute'
+        },
+        {
+            type: 'input',
+            message: 'How can a user test this application?',
+            name: 'test'
+        },
+        {
+            type: 'list',
+            message: 'What license should this application use?',
+            choices: ['MIT', 'GPL', 'Apache', 'BSD', 'MPL'],
+            name: 'license',
+        },
+        {
+            type: 'input',
+            message: 'What is your Github Username?',
+            name: 'ghub'
+        },
+        {
+            type: 'input',
+            message: 'What is your email address?',
+            name: 'email'
+        }
+    ])
+    .then((answers) => {
+        const pageContent = writeToFile(answers)
+        
+        FS.writeFile('README.md', pageContent, (err) =>
+        err ? console.log(err) : console.log('Successfully created README.md!'))
+    })
+}
+
 
 // Function call to initialize app
 init();
