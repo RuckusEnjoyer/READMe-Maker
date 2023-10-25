@@ -1,9 +1,9 @@
 
-# i
+# README Maker
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description
 
-asd
+An application that will automatically make a functional README file based on user input. Works with Node.
     
 ## Table of Contents
 
@@ -16,11 +16,11 @@ asd
     
 ## Installation
 
-asdf
+You can install this application by cloning the necessary code to your terminal.
 
 ## Usage
     
-ads
+To use this application, navigate to the terminal where the index.js is located. Then, type node index.js (or node index) to run the application.
 
 ## License
 
@@ -30,16 +30,16 @@ This project is covered under the MIT license. For more information, visit the l
 
 ## Contributing
 
-asdf
+N/A
     
 ## Tests
 
-ads
+N/A
     
 ## Questions
 
 Have any questions? This is how to contact me:
 
-Github: https://github.com/saf
-Email: asdfx
+Github: https://github.com/RuckusEnjoyer
+Email: hail3yp@gmail.com
     

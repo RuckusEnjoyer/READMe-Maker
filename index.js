@@ -67,7 +67,7 @@ function init() {
         },
         {
             type: 'input',
-            message: 'how do you install this application?',
+            message: 'how can the user install this application?',
             name: 'install',
         },
         {
