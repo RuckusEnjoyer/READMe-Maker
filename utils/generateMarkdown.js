@@ -16,5 +16,9 @@ function generateMarkdown(data) {
 
 `;
 }
-
-module.exports = generateMarkdown;
+  
+  //exports the function
+  module.exports = {
+    renderLicenseBadge
+  };
+  
