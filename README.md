@@ -1,35 +1,45 @@
 
-# README maker
+# SVG Logo Maker
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description
 
-This is an app that automatically creates a professional README using the terminal and Node.js. I created this application so that I can make a professional README in a much simpler manner than before. 
+This is a node app that will automatically make a simple SVG type logo using javascript. This was created to make simple logos for future websites as placeholders. When making this project, my biggest challenge was figuring out how to use exported classes. I got frequent error messages where the Shape class was improperly exported. This problem got fixed by changing the variables to this.shape, this.txt, this.txtColor, etc. 
     
 ## Table of Contents
 
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [License](#License)
+- [Contributing](#Contributing)
+- [Tests](#Tests)
 - [Questions](#Questions)
     
 ## Installation
 
-The user can install this application by downloading and/or cloning the contents from this repo.
+You can use this app by cloning the repo to your folder.
 
 ## Usage
     
-The user can use this application by navigating to the folder where index.js is located using the terminal. Then, type node index.js (or node index).
-
-[![A video of how to use the application.](./Images/Capture.PNG)](https://drive.google.com/file/d/17Az-FOT3lxAXjbmVUUwX97-SqyCUE76v/view "How to Use")
+To use this app, navigate to the repo in your terminal. Then, install the packages in the package.json file. When that is complete, simply type node index. It will run this project after a few seconds of buffering.
 
 ## License
 
 This project is covered under the MIT license. For more information, visit the link below.
 
 [License Link](./LICENSE)
+
+## Contributing
+
+This is a bootcamp project, I will not accept contributions at this time.
+    
+## Tests
+
+You can test this application by running the shapes.test.js located inside the lib folder.
     
 ## Questions
 
 Have any questions? This is how to contact me:
 
 Github: https://github.com/RuckusEnjoyer
+Email: 
+    
