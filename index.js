@@ -105,7 +105,7 @@ function init() {
     .then((answers) => {
         const pageContent = writeToFile(answers)
         
-        FS.writeFile('README.md', pageContent, (err) =>
+        FS.writeFile('./output/README.md', pageContent, (err) =>
         err ? console.log(err) : console.log('Successfully created README.md!'))
     })
 }
