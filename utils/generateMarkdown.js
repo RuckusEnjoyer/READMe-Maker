@@ -21,8 +21,36 @@ function renderLicenseBadge(license) {
         return ''
     }
   }
+
+  function renderSchoolBadge(school) {
+    if (school) {
+      return '![edX](https://img.shields.io/badge/edX-%2302262B.svg?style=for-the-badge&logo=edX&logoColor=white)'
+    } else {
+      return ''
+    }
+  }
+
+  function renderHostBadge(host) {
+    switch(host) {
+      case 'GitHub Pages':
+        return '![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)'
+        break;
+      case 'Heroku':
+        return '![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)'
+        break;
+      case 'Netlify':
+        return '![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)'
+        break;
+      default:
+        return ''
+    }
+  }
+
+
   //exports the function
   module.exports = {
-    renderLicenseBadge
+    renderLicenseBadge,
+    renderSchoolBadge,
+    renderHostBadge,
   };
   
